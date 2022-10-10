@@ -1,8 +1,6 @@
 jQuery("#crud_stores_form_create").submit(function(e){
       e.preventDefault();
-        
-      console.log("desde el backend");
-      /*
+      //console.log("desde el backend");
       jQuery.ajax({
             url: ajax_var.url,
             type: "POST", // podría ser get, post, put o delete.
@@ -33,6 +31,5 @@ jQuery("#crud_stores_form_create").submit(function(e){
             alert(msg);
         },
     });
-    */
-
 });
+
