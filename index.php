@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Directorio de Tiendas
+ * Plugin Name: Directorio de Tiendas usando la clase WPDB
  */
 
  require "install.php";
