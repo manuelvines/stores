@@ -14,9 +14,9 @@
                 '1.0',
                 'all');
                 wp_register_style('bootstrap',
-                "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css",
+                "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css",
                  array('crud-stores'),
-                '5.2.0',
+                '5.2.2',
                 'all');
                 wp_enqueue_style('crud-stores');
                 wp_enqueue_style('bootstrap');
@@ -31,6 +31,18 @@
    */
   if(!function_exists('crud_stores_enqueue_scripts')){
         function crud_stores_enqueue_scripts(){
+
+
+            wp_register_script(
+                'bootstrap-js',
+                "https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js",
+                array('jquery'),
+                '5.2.2',
+                true);   
+            wp_enqueue_script('bootstrap-js');
+
+
+
             wp_register_script(
             'crud-stores-javascript',
             plugins_url( 'public/assets/js/main.js', __FILE__ ),
